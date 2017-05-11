@@ -1,0 +1,15 @@
+body {
+	background-color: $light-bg;
+	color: $color-default;
+	font-family: $font-primary;
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	margin: 0;
+	padding: 30px 0 0;
+}
+
+html.no-page-top {
+	body > .body {
+		padding-top: 100px;
+	}
+}

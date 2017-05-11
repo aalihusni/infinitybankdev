@@ -1,0 +1,38 @@
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+$font-primary: "Open Sans", Arial, sans-serif;
+$font-secundary: Georgia, sans-serif;
+$body-font-size: 13px;
+$root-font-size: 13px;
+$body-line-height: 22px;
+
+// weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// spacement
+$spacement-increment: 5px;
+$spacement-xs: $spacement-increment;
+$spacement-sm: $spacement-xs + $spacement-increment;
+$spacement-md: $spacement-sm + $spacement-increment;
+$spacement-lg: $spacement-md + $spacement-increment;
+$spacement-xl: $spacement-lg + $spacement-increment;
+$spacement-xlg: $spacement-xl + $spacement-increment;
+
+// borders
+$border-thin: 3px;
+$border-normal: 5px;
+$border-thick: 7px;
+
+// =============================================================================
+// COLORS
+// =============================================================================
+$color-default: #87919f;
+$color-dark: #2d343e;
+
+// Light Version
+$light-bg: #edeff2;
+$footer-bg: $color-dark;

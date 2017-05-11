@@ -1,0 +1,25 @@
+/* Maps */
+.google-map {
+	background: #E5E3DF;
+	height: 400px;
+	margin: -65px 0 30px;
+	width: 100%;
+	img {
+		max-width: 9999px;
+	}
+}
+
+/* Map Overlay */
+.map-overlay {
+	margin-top: -390px;
+}
+
+.map-overlay .box-content {
+	border-top: 0;
+	text-align: left;
+}
+
+/* Maps - Parallax */
+.parallax + .google-map {
+	margin-top: -70px;
+}

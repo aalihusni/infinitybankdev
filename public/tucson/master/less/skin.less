@@ -1,0 +1,564 @@
+@skinColor: #E36159;
+
+@primaryColor: @skinColor;
+@secundaryColor: #48CFAD;
+@tertiaryColor: #4FC1E9;
+@quartenaryColor: #AC92EC;
+
+@defaultColor: transparent;
+@successColor: #A0D468;
+@infoColor: #4FC1E9;
+@warningColor: #F8C74D;
+@dangerColor: #EA3547;
+
+@darkColor: #2D343E;
+
+@import "mixins";
+
+// Basic
+h3, h4, h5 {
+	color: @skinColor;
+}
+
+a {
+	color: @skinColor;
+	&:hover {
+		color: lighten(@skinColor, 5%);
+	}
+	&:active {
+		color: darken(@skinColor, 5%);
+	}
+}
+
+.alternative-font {
+	color: @skinColor;
+}
+
+// Drop Caps
+p.drop-caps {
+	&:first-child:first-letter {
+		color: @skinColor;
+	}
+	&.secundary:first-child:first-letter {
+		background-color: @skinColor;
+	}
+}
+
+// Nav
+ul.nav-pills > li.active > a {
+	background-color: @skinColor;
+	&:hover, &:focus {
+		background-color: @skinColor;
+	}
+}
+
+// Sort
+.sort-source-wrapper .nav > li.active > a {
+	color: @skinColor;
+	&:hover, &:focus {
+		color: @skinColor;
+	}
+}
+
+/* Labels */
+.label-primary {
+	background-color: @skinColor;
+}
+
+// Pagination
+.pagination {
+	> li > a,
+	> li > span,
+	> li > a:hover,
+	> li > span:hover,
+	> li > a:focus,
+	> li > span:focus {
+		color: @skinColor;
+	}
+	> .active > a,
+	> .active > span,
+	> .active > a:hover,
+	> .active > span:hover,
+	> .active > a:focus,
+	> .active > span:focus {
+		background-color: @skinColor;
+		border-color: @skinColor;
+	}
+}
+
+body.dark .pagination {
+	> li > a,
+	> li > span,
+	> li > a:hover,
+	> li > span:hover,
+	> li > a:focus,
+	> li > span:focus {
+		color: @skinColor;
+	}
+	> .active > a,
+	> .active > span,
+	> .active > a:hover,
+	> .active > span:hover,
+	> .active > a:focus,
+	> .active > span:focus {
+		background-color: @skinColor;
+		border-color: @skinColor;
+	}
+}
+
+// Buttons
+.btn-default,
+.btn-default.btn-lg,
+.btn-default.btn-sm,
+.btn-default.btn-xs {
+	border-color: @skinColor;
+	background-color: @defaultColor;
+	color: @skinColor;
+}
+
+.btn-default:hover,
+.btn-default.btn-lg:hover,
+.btn-default.btn-sm:hover,
+.btn-default.btn-xs:hover {
+	border-color: lighten(@skinColor, 5%);
+	background-color: lighten(@defaultColor, 5%);
+	color: lighten(@skinColor, 5%);
+}
+
+.btn-default:focus,
+.btn-default.btn-lg:focus,
+.btn-default.btn-sm:focus,
+.btn-default.btn-xs:focus {
+	border-color: darken(@skinColor, 5%);
+	background-color: darken(@defaultColor, 5%);
+	color: darken(@skinColor, 5%);
+}
+
+.btn-primary {
+	border-color: darken(@skinColor, 10%);
+	background-color: @skinColor;
+}
+
+.btn-primary:hover {
+	border-color: darken(@skinColor, 6%);
+	background-color: lighten(@skinColor, 2%);
+}
+
+.btn-primary:focus {
+	border-color: darken(@skinColor, 4%);
+	background-color: darken(@skinColor, 4%);
+}
+
+.btn-success {
+	border-color: darken(@successColor, 10%);
+	background-color: @successColor;
+}
+
+.btn-success:hover {
+	border-color: darken(@successColor, 6%);
+	background-color: lighten(@successColor, 2%);
+}
+
+.btn-success:focus {
+	border-color: darken(@successColor, 4%);
+	background-color: darken(@successColor, 4%);
+}
+
+.btn-info {
+	border-color: darken(@infoColor, 10%);
+	background-color: @infoColor;
+}
+
+.btn-info:hover {
+	border-color: darken(@infoColor, 6%);
+	background-color: lighten(@infoColor, 2%);
+}
+
+.btn-info:focus {
+	border-color: darken(@infoColor, 4%);
+	background-color: darken(@infoColor, 4%);
+}
+
+.btn-warning {
+	border-color: darken(@warningColor, 10%);
+	background-color: @warningColor;
+}
+
+.btn-warning:hover {
+	border-color: darken(@warningColor, 6%);
+	background-color: lighten(@warningColor, 2%);
+}
+
+.btn-warning:focus {
+	border-color: darken(@warningColor, 4%);
+	background-color: darken(@warningColor, 4%);
+}
+
+.btn-danger {
+	border-color: darken(@dangerColor, 10%);
+	background-color: @dangerColor;
+}
+
+.btn-danger:hover {
+	border-color: darken(@dangerColor, 6%);
+	background-color: lighten(@dangerColor, 2%);
+}
+
+.btn-danger:focus {
+	border-color: darken(@dangerColor, 4%);
+}
+
+// Progress Bar
+.progress-bar-primary {
+	background-color: @skinColor;
+}
+
+// Sections
+section.highlight {
+	background-color: @skinColor !important;
+	border-color: darken(@skinColor, 5%) !important;
+}
+
+section.toggle {
+	label {
+		color: @skinColor;
+	}
+	&.active > label {
+		background-color: @skinColor;
+		border-color: @skinColor;
+		color: #FFF;
+	}
+}
+
+// Page Top
+section.page-top .page-top-info ul.breadcrumb {
+	background-color: @skinColor !important;
+}
+
+section.page-top.basic .page-top-info a {
+	color: @skinColor !important;
+}
+
+// Featured Box
+.feature-box .feature-box-icon {
+	background-color: @skinColor;
+}
+
+.featured-box-primary i.icon-featured,
+.featured-box-primary i.image-icon {
+	background-color: @skinColor;
+}
+
+.featured-box-primary i.icon-featured:after {
+	border-color: @skinColor;
+}
+
+.featured-box-primary h4 {
+	color: @skinColor;
+}
+
+.featured-box-primary .box-content {
+	border-top-color: @skinColor;
+}
+
+.featured-box-secundary i.icon-featured,
+.featured-box-secundary i.image-icon {
+	background-color: @secundaryColor;
+}
+
+.featured-box-secundary i.icon-featured:after {
+	border-color: @secundaryColor;
+}
+
+.featured-box-secundary h4 {
+	color: @secundaryColor;
+}
+
+.featured-box-secundary .box-content {
+	border-top-color: @secundaryColor;
+}
+
+.feature-box.secundary .feature-box-icon i.fa {
+	color: @skinColor;
+}
+
+.featured-boxes.tertiary .featured-box-secundary i.icon-featured {
+	border: 2px solid @secundaryColor;
+	color:  @secundaryColor;
+}
+
+.featured-box-tertiary i.icon-featured,
+.featured-box-tertiary i.image-icon {
+	background-color: @tertiaryColor;
+}
+
+.featured-box-tertiary i.icon-featured:after {
+	border-color: @tertiaryColor;
+}
+
+.featured-box-tertiary h4 {
+	color: @tertiaryColor;
+}
+
+.featured-box-tertiary .box-content {
+	border-top-color: @tertiaryColor;
+}
+
+.featured-boxes.tertiary .featured-box-tertiary i.icon-featured {
+	border: 2px solid @tertiaryColor;
+	color:  @tertiaryColor;
+}
+
+.featured-boxes.tertiary .featured-box-primary i.icon-featured {
+	border: 2px solid @skinColor;
+	color:  @skinColor;
+}
+
+.featured-box-quartenary i.icon-featured,
+.featured-box-quartenary i.image-icon {
+	background-color: @quartenaryColor;
+}
+
+.featured-box-quartenary i.icon-featured:after {
+	border-color: @quartenaryColor;
+}
+
+.featured-box-quartenary h4 {
+	color: @quartenaryColor;
+}
+
+.featured-box-quartenary .box-content {
+	border-top-color: @quartenaryColor;
+}
+
+.featured-boxes.tertiary .featured-box-quartenary i.icon-featured {
+	border: 2px solid @quartenaryColor;
+	color:  @quartenaryColor;
+}
+
+// Thumb
+.thumb-info {
+	.thumb-info-type {
+		background-color: @skinColor;
+	}
+	.thumb-info-action-icon {
+		background-color: @skinColor;
+	}
+}
+
+.thumb-info-social-icons a {
+	background-color: @skinColor;
+}
+
+.thumb-info.secundary .thumb-info-title .thumb-info-type {
+	background-color: @skinColor;	
+}
+
+.thumbnail .zoom {
+	background-color: @skinColor;
+}
+
+.img-thumbnail .zoom {
+	background-color: @skinColor;
+}
+
+// Inverted
+.inverted {
+	background-color: @skinColor;
+}
+
+// Tabs
+.tabs {
+	ul.nav-tabs {
+		a, a:hover {
+			color: @skinColor;
+		}
+
+		a:hover,
+		a:focus {
+			border-top-color: @skinColor;
+		}
+
+		li.active a {
+			border-top-color: @skinColor;
+			color: @skinColor;
+		}
+		&.nav-justified {
+			a:hover,
+			a:focus {
+				border-top-color: @skinColor;
+			}
+		}
+	}
+	&.tabs-bottom {
+		ul.nav-tabs {
+			li a:hover,
+			li.active a,
+			li.active a:hover,
+			li.active a:focus {
+				border-bottom-color: @skinColor;
+			}
+		}
+	}
+	&.tabs-vertical.tabs-left {
+		ul.nav-tabs {
+			li a:hover,
+			li.active a,
+			li.active a:hover,
+			li.active a:focus {
+				border-left-color: @skinColor;
+			}
+		}
+	}
+	&.tabs-vertical.tabs-right {
+		ul.nav-tabs {
+			li a:hover,
+			li.active a,
+			li.active a:hover,
+			li.active a:focus {
+				border-right-color: @skinColor;
+			}
+		}
+	}
+}
+
+// Lists
+ul.list.fas li i {
+	color: @skinColor;
+}
+
+// Icons
+i.icon-featured {
+	background-color: @skinColor;
+}
+
+.parallax blockquote i.fa-quote-left {
+	color: @skinColor;
+}
+
+section.video blockquote i.fa-quote-left {
+	color: @skinColor;
+}
+
+.icon-rounded {
+	background-color: @skinColor;
+}
+
+ul.list.icons li i {
+	color: @skinColor;
+}
+
+// Panel
+.panel-group {
+	.panel-heading a {
+		color: @skinColor;
+	}
+	&.secundary {
+		.panel-heading {
+			background-color: @skinColor !important;
+		}
+	}
+}
+
+// Header
+#header {
+
+	nav ul.nav-main {
+
+		li.active > a {
+			color: @skinColor !important;
+		}
+
+	}
+
+}
+
+#header .header-top.color {
+    background-color: @skinColor !important;
+}
+
+// Pricing Tables
+.pricing-table {
+
+	.most-popular {
+		border-color: @skinColor;
+		h3 {
+			.gradient(@skinColor, darken(@skinColor, 15%), @gradient);
+		}
+	}
+
+}
+
+// Timeline
+section.timeline .timeline-box.left:before,
+section.timeline .timeline-box.right:before {
+	background: @skinColor;
+	box-shadow: 0 0 0 3px #FFF, 0 0 0 6px @skinColor;
+}
+
+// Dividers
+.divider.colored .fa {
+	color:  @skinColor;
+}
+
+// Blog
+.recent-posts .date, article.post .post-date {
+	.month {
+		background-color: @skinColor;
+	}
+	.day {
+		color: @skinColor;
+	}
+}
+
+// Home
+.slider .tp-bannertimer {
+	background-color: @skinColor;
+}
+
+.home-intro p em {
+	color: lighten(@skinColor, 10%);
+}
+
+.home-concept strong {
+	color: @skinColor;
+}
+
+// Text BG
+.text-bg {
+	background-color: @skinColor;
+}
+
+// Slider Overlay
+.slider-overlay {
+    background-color: @skinColor;
+}
+
+// Shop
+.shop {
+	ul.products li.product .onsale {
+		background-color: @skinColor;
+		border-bottom-color: darken(@skinColor, 8%);
+	}
+
+	.star-rating span,
+	.cart-totals tr.total .amount {
+		color: @skinColor;
+	}
+}
+
+// Footer
+#footer {
+	.footer-ribbon {
+		background: @skinColor;
+	}
+
+	.footer-ribbon:before {
+		border-right-color: darken(@skinColor, 15%);
+	}
+}
+
+// Boxed
+html.boxed .body {
+	border-top-color: @skinColor;
+}

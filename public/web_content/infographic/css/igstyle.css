@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+html, body { margin: 0; padding: 0; background: #262626; width: 100%; height: 100%;}
+.wrapper { float: left; position: relative; width: 100%; height: 100%}
+
+.b-grey { border: 1px solid #aaa}
+.b-dark { border: 1px solid #242424}
+.b-red { border: 1px solid red }
+.bg-dark { background-color: #2e2e2e; border-radius: 3px; padding: 20px; margin: 20px auto;}
+.map { background-image: url("../img/dot-map.png"); background-repeat: no-repeat; background-position: top center; background-color: #2e2e2e; min-height: 583px }
+
+
+/* TEXT HELPER */
+h1, h2, h3, h4, h5 { font-family: "Montserrat", sans-serif}
+.mont-norm { font-family: "Montserrat", sans-serif; font-weight: 400 }
+.mont-bold { font-family: "Montserrat", sans-serif; font-weight: 700 }
+.robo-norm { font-family: "Roboto", sans-serif; font-weight: 400 }
+.robo-bold { font-family: "Roboto", sans-serif; font-weight: 700 }
+.grey-txt {color: #eee}
+.red-txt { color: #F2385A }
+.oren-txt { color: #F5A503 }
+.oren-dark-txt { color: #E23A13}
+.lime-txt { color: #EAF9B5 }
+.lime-dark-txt { color: #cae95c } 
+.green-txt { color: #4AD9D9 }
+.green-dark-txt { color: #00c9c9 }
+.blu-txt { color: #41B1E0}
+.blu-dark-txt { color: #008cc7}
+.blu-darker-txt { color: #0056BC}
+.left-txt { text-align: left }
+.right-txt { text-align: right }
+.center-txt { text-align: center }
+.fs10 { font-size: 10px }
+.fs11 { font-size: 11px }
+.fs12 { font-size: 12px }
+.fs13 { font-size: 13px }
+.fs14 { font-size: 14px }
+.fs16 { font-size: 16px }
+.fs18 { font-size: 18px }
+.fs20 { font-size: 20px }
+.fs22 { font-size: 22px }
+.fs24 { font-size: 24px }
+.fs26 { font-size: 26px }
+.fs28 { font-size: 28px }
+.fs30 { font-size: 30px }
+.fs32 { font-size: 32px }
+.fs40 { font-size: 40px }
+.fs50 { font-size: 50px }
+.fs60 { font-size: 60px }
+.fs80 { font-size: 80px; line-height: 60px  }
+.fs100{ font-size: 100px; line-height: 80px }
+.fs120{ font-size: 120px; line-height: 100px}
+.fs140{ font-size: 140px}
+.fs150{ font-size: 150px}
+.fs160{ font-size: 160px}
+.fs200{ font-size: 200px}
+.line25 { line-height: 25%}
+.line50 { line-height: 50%}
+.line75 { line-height: 200%}
+
+/* Positioning Helper */
+.pr100 { padding-right: 100px}
+.pr140 { padding-right: 140px}
+.pr160 { padding-right: 160px}
+.pr180 { padding-right: 180px}
+.pr200 { padding-right: 100px}
+.m-center { margin-left: auto; margin-right: auto}
+
+/* Layer */
+.ribbon { position: relative; margin:15px auto; background : url("../img/ribbon.png"); width: 720px; height:153px; text-align: center; font-family: "Montserrat", sans-serif; color: #262626; font-size: 40px; 
+         padding-top:45px }

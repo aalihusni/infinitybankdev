@@ -1,0 +1,81 @@
+/* Add here all your CSS customizations */
+.net_first {
+    height:160px;
+    vertical-align: top;
+}
+.net_second {
+    height:180px;
+    vertical-align: top;
+}
+.net_second .img-rounded{
+    width:80px;
+}
+.net_third .img-rounded{
+    width:50px;
+}
+.net_forth .img-rounded{
+    width:20px;
+}
+.first_line {
+    width:67%;
+    border-top:thin solid #CCC;
+    margin-left:auto;
+    margin-right:auto;
+}
+.verticle_line {
+    width:1px;
+    height:40px;
+    border-left:thin solid #CCC;
+    margin-left:auto;
+    margin-right:auto;
+}
+.ver_mid{
+    margin-top:-20px;
+    height:60px;
+}
+.verticle_line_forth {
+    width:1px;
+    height:25px;
+    border-left:thin solid #CCC;
+    margin-left:auto;
+    margin-right:auto;
+}
+.ver_mid_forth{
+    margin-top:-10px;
+    height:35px;
+}
+.net_forth td {
+    vertical-align: top;
+}
+.bor_dark {
+    border: thin solid #666;
+}
+a.seemore:hover .img-rounded {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+#navigation {
+    position:absolute;
+    margin-top:-160px;
+    margin-left:-50px;
+}
+.hierow_color {
+
+}
+
+#ref_generation ul {
+    margin:0;
+    padding:0;
+}
+
+#ref_generation ul li {
+    list-style-type:none;
+}
+
+#ref_generation ul li a {
+    background-color:#333;
+    display:block;
+    padding:15px;
+    color:#FFF;
+}

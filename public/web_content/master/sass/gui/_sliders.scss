@@ -1,0 +1,151 @@
+/* Home Slider - Revolution Slider */
+.slider-container {
+	background: #666;
+	max-height: 580px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	background: transparent;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.tp-caption {
+		a {
+			color: #FFF;
+			&:hover {
+				color: #FFF;
+			}
+		}
+		filter: alpha(opacity = 0);
+		opacity: 0;
+	}
+}
+
+.slider-container-fullscreen {
+	max-height: none;
+	.slider {
+		max-height: none;
+	}
+}
+
+.slider {
+	> ul > li > img {
+		visibility: hidden;
+	}
+	max-height: 580px;
+	position: relative;
+	.tp-bannertimer {
+		display: none;
+	}
+	a.main-button {
+		font-family: 'Oswald', sans-serif;
+		font-size: 26px;
+		font-weight: 300;
+		line-height: 20px;
+		padding: 20px 55px;
+	}
+}
+
+.tp-bannershadow {
+	display: none;
+}
+
+/* Revolution Slider - Basics */
+.slider-container {
+	.tp-caption.fullscreenvideo {
+		left: 0 !important;
+	}
+	.top-label {
+		color: #9a9a9a;
+		font-size: 32px;
+		font-weight: 300;
+		font-family: 'Alegreya SC', sans-serif;
+		-webkit-text-stroke: 0.2px;
+		&.md {
+			font-size: 28px;
+			-webkit-text-stroke: 0;
+		}
+	}
+	.main-label {
+		color: #222831;
+		font-size: 130px;
+		line-height: 150px;
+		font-weight: 900;
+		-webkit-text-stroke: 0.6px;
+		&.md {
+			font-size: 100px;
+			line-height: 100px;
+		}
+	}
+	.bottom-label {
+		color: #666;
+		font-size: 20px;
+		font-weight: 100;
+		-webkit-text-stroke: 0.2px;
+		&.md {
+			font-size: 16px;
+			line-height: 16px;
+		}
+	}
+	.top-line {
+		height: 1px;
+		width: 200px;
+		background: #B7BDC0;
+	}
+	&.light {
+		.top-label, .main-label, .bottom-label {
+			color: #333;
+		}
+		.tp-caption a {
+			color: #333;
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+	.top-label.white, .main-label.white, .bottom-label.white {
+		color: #FFF;
+	}
+	.tp-caption a.white {
+		color: #FFF;
+		&:hover {
+			color: #FFF;
+		}
+	}
+	.top-label.dark, .main-label.dark, .bottom-label.dark {
+		color: #444;
+	}
+	.tp-caption a.dark {
+		color: #444;
+		&:hover {
+			color: #444;
+		}
+	}
+	.top-label.text-bg, .main-label.text-bg, .bottom-label.text-bg {
+		padding: 10px;
+	}
+	.tp-caption a.text-bg {
+		padding: 10px;
+		&:hover {
+			padding: 10px;
+		}
+	}
+}
+
+/* Slider Overlay*/
+.slider-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: transparent;
+	filter: alpha(opacity=75);
+	opacity: 0.75;
+}

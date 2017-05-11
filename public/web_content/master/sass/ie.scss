@@ -1,0 +1,19 @@
+/*
+Name: 			ie.css
+Written by: 	Okler Themes - (http://www.okler.net)
+Version: 		@@version
+*/
+
+//COMMON IMPORTS
+@import "config/imports";
+
+/* Header */
+html.ie header {
+	background: #fff;
+	filter: none;
+}
+
+/* Navigation */
+html.ie9 header nav ul.nav-main ul.dropdown-menu {
+	filter: none !important;
+}

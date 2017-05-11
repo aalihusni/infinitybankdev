@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="web_content/css/animate.css">
+<script type="text/javascript" src="web_content/ajax/extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="web_content/ajax/extras/modernizr.2.5.3.min.js"></script>
+
+<div style="position:fixed; top:10px; width:100%; text-align:center; z-index:9999;">
+
+    <div class="visible-xs">
+        <br><br>
+        <img src="web_content/img/marketing_plan.png" width="200px"/> <br>
+    BitRegion Marketing Plan <br><br> <a href="download/chinese_mp.pdf" target="_blank" class="btn btn-primary"><span class="fa fa-download"></span> DOWNLOAD PDF</a>
+    </div>
+
+    <div class="hidden-xs">
+        BitRegion Marketing Plan | <a href="download/chinese_mp.pdf" target="_blank" class="btn btn-primary"><span class="fa fa-download"></span> DOWNLOAD PDF</a> <a href="" class="btn btn-default modal-dismiss" onclick="close();"><span class="fa fa-close"></span> CLOSE</a>
+    </div>
+
+</div>
+
+<div class="flipbook-viewport hidden-xs">
+    <div class="container">
+        <div class="flipbook">
+            <div style="background-image:url(web_content/ajax/cccn/1.jpg)">
+                <div id="fliphere" style="float:right; padding:10px; font-weight:bold;">Flip HERE! <span class="fa fa-chevron-circle-right"></span></div>
+            </div>
+            <div style="background-image:url(web_content/ajax/cccn/2.jpg)"></div>
+            <div style="background-image:url(web_content/ajax/cccn/3.jpg)"></div>
+            <div style="background-image:url(web_content/ajax/cccn/4.jpg)"></div>
+            <div style="background-image:url(web_content/ajax/cccn/5.jpg)"></div>
+            <div style="background-image:url(web_content/ajax/cccn/6.jpg)"></div>
+            <div style="background-image:url(web_content/ajax/cccn/7.jpg)"></div>
+            <div style="background-image:url(web_content/ajax/cccn/8.jpg)"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function loadApp() {
+        $('.flipbook').turn({
+            width:922,
+            height:600,
+            elevation: 10,
+            gradients: true,
+            autoCenter: true
+        });
+    }
+
+    yepnope({
+        test : Modernizr.csstransforms,
+        yep: ['web_content/ajax/lib/turn.js'],
+        nope: ['web_content/ajax/lib/turn.html4.min.js'],
+        both: ['web_content/ajax/css/basic.css'],
+        complete: loadApp
+    });
+
+
+
+
+</script>

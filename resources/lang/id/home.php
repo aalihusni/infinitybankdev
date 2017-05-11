@@ -1,0 +1,36 @@
+<?php 
+ return [
+
+'welcome' => "Selamat Datang!",
+'pls_upgrade_to_become_member' => "Silahkan upgrade ke kelas Imigran untuk menjadi anggota penuh dalam komunitas ini.",
+'received_one_passport' => "Anda telah menerima 1 Paspor Gratis",
+'receive_one_passport_info' => "Sebagai bentuk apresiasi dari komunitas, Paspor ini bisa digunakan untuk memulai Bantuan Derma (Assistance) pertama anda (untuk upgrade ke kelas Immigrant) dan dapat membuka fitur manfaat yang lebih di Bitregion.",
+'provide_asssistance_now' => "Beri Bantuan Derma (Assistance) sekarang",
+'dont_miss_gb' => "Elakkan kehilangan bonus insentif 'Give Back' anda",
+'your_upline_is_now' => "Upline anda kini",
+'class_above' => "kelas di atas anda. Anda harus minimum berstatus di 2 kelas dibawah upline anda untuk menerima bonus insentif 'Give Back'. Anda perlu upgrade sekarang untuk terus mendapatkan bonus insentif 'Give Back' jika upline anda upgrade ke kelas berikutnya.",
+'upgrade_now' => "Upgrade Sekarang",
+'assistance_given' => "Bantuan Derma (Assistance) telah diberi",
+'assistance_received' => "Bantuan Derma (Assistance) telah diterima",
+'members' => "Anggota Jaringan",
+'upgrade_to' => "Upgrade kepada",
+'class' => "Kelas",
+'member_slot' => "Slot Anggota",
+'potential' => "Potensi",
+'bonus_entitlement' => "Bonus dan Hak Keberhasilan",
+'total_ph' => "Total PH",
+'dividend' => "Dividen",
+'current_pairing' => "Pasangan Kini",
+'next_pair_in' => "Pasangan Berikutnya dalam",
+'passport_referral' => "Paspor Referral Perkenal",
+'passport_overriding' => "Paspor Overriding",
+'ph_capital' => "PH Modal Capital",
+'ph_dividend' => "PH Dividen",
+'ph_referral' => "PH Referral Perkenal",
+'ph_overriding' => "PH Overriding",
+'flex_pairing' => "Pasangan Fleksibel (Flex Pairing)",
+'br_shares' => "Saham BR",
+'available_br_Shares' => "Saham BR Tersedia",
+
+];
+?>

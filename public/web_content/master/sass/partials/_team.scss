@@ -1,0 +1,37 @@
+/* Team List */
+ul.team-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	.team-item {
+		margin-bottom: 35px;
+		padding: 0;
+		border-bottom: 3px solid #E3E4E8;
+		.thumb-info {
+			border: 0;
+		}
+		.thumb-info-caption {
+			padding: 0;
+			margin: 0 13px 13px;
+			display: block;
+			p {
+				padding: 0;
+				margin: 0;
+			}
+		}
+		.thumb-info-social-icons {
+			margin: 15px 0 0;
+			display: block;
+		}
+	}
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+
+	ul.team-list .team-item {
+		margin: 0 auto 35px;
+		max-width: 270px;
+	}
+
+}

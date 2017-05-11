@@ -1,0 +1,31 @@
+/* Accordion */
+.panel-group {
+	.panel {
+		padding: 1px;
+		border: 0;
+	}
+	.panel-heading {
+		padding: 0;
+		margin: 3px;
+		border-radius: 3px;
+		a {
+			display: block;
+			padding: 10px 15px;
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+			[class^="icon-"] {
+				margin-right: 4px;
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+	&.secundary {
+		.panel-heading {
+			a {
+				color: #FFF;
+			}
+		}
+	}
+}

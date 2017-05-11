@@ -1,0 +1,70 @@
+/* Boxed Layout */
+html.boxed {
+	body {
+		background-color: transparent;
+		background-position: 0 0;
+		background-repeat: repeat;
+		padding-top: 0 !important;
+	}
+	.body {
+		background-color: #edeff2;
+		border-bottom: 5px solid $color-dark;
+		border-radius: 5px;
+		border-top: 5px solid #CCC;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+		margin: 25px auto;
+		max-width: 1200px;
+		height: auto;
+	}
+	#header {
+		position: relative;
+	}
+	body.sticky-menu-active {
+		#header {
+			left: 0;
+			position: fixed;
+		}
+	}
+	section.page-top {
+		margin-top: -3px;
+	}
+	&.no-page-top body > .body {
+		padding-top: 0 !important;
+	}
+	.google-map {
+		margin-top: -2px;
+	}
+	.home-top {
+		margin-top: -5px;
+	}
+	.shop, .blog-posts {
+		margin-top: 45px;
+	}
+	.sort-source-wrapper {
+		margin-top: -10px;
+	}
+	&.no-page-top .portfolio-title {
+		margin-top: 35px;
+	}
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+
+	html.boxed .body {
+		margin: 0 auto;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	/* Boxed */
+	html.boxed {
+		background: none !important;
+	}
+
+}
