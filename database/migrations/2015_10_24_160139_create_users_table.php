@@ -48,6 +48,7 @@ class CreateUsersTable extends Migration {
 			$table->string('mobile', 225);
 			$table->boolean('mobile_share');
 			$table->string('remember_token', 100)->nullable();
+			$table->timestamp('leader_at')->default('0000-00-00 00:00:00');
 			$table->timestamps();
 		});
 	}
